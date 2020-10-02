@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Learn how to Cook</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" class="toggle">
+        <div class="hamburger">
+            <div class="bar"></div>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list" dir="rtl">
+                <li class="nav-list-element"><a class="nav-link" onclick="document.getElementById('hero').scrollIntoView(true);">Home</a></li>
+                <li class="nav-list-element"><a class="nav-link" onclick="document.getElementById('about').scrollIntoView(true);">About</a></li>
+                <li class="nav-list-element"><a class="nav-link" onclick="document.getElementById('resources').scrollIntoView(true);">Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero" id="hero">
+        <h1 class="title">Learn How to Cook</h1>
+        <a class="down-arrow" onclick="document.getElementById('about').scrollIntoView(true);">
+            <div class="arrow"></div>
+        </a>
+    </div>
+    <div class="about" id="about">
+        <h1 class="title">About</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+    <div class="resources" id="resources">
+        <h1>Choose a Recipe!</h1>
+        <div class="topic-tree">
+            <ul class="main-menu">
+                <li>
+                    Vegetarian
+                    <input type="checkbox" class="toggle">
+                    <div class="toggle-label">
+                      <div class="bar"></div>
+                    </div>
+                    <ul class="submenu">
+                        <li>
+                            Italian Food
+                            <input type="checkbox" class="toggle">
+                          <div class="toggle-label">
+                            <div class="bar"></div>
+                          </div>
+                          <ul class="submenu-2">
+                              <li><a>Vegetarian Pasta</a></li>
+                              <li><a>Vegetarian Pizza</a></li>
+                              <li><a>Vegetarian Lasagne</a></li>
+                              <li><a>Italian Minestrone Soup</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          Indian Food
+                          <input type="checkbox" class="toggle">
+                          <div class="toggle-label">
+                            <div class="bar"></div>
+                          </div>
+                          <ul class="submenu-2">
+                              <li><a>Potatoes and Cauliflower</a></li>
+                              <li><a>Dal Makhani</a></li>
+                              <li><a>Cottage Cheese With Vegetables</a></li>
+                              <li><a>Vegetarian Dosa</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Non-Vegetarian
+                    <input type="checkbox" class="toggle">
+                    <div class="toggle-label">
+                      <div class="bar"></div>
+                    </div>
+                    <ul class="submenu">
+                        <li>
+                          Indian Food
+                          <input type="checkbox" class="toggle">
+                          <div class="toggle-label">
+                            <div class="bar"></div>
+                          </div>
+                          <ul class="submenu-2">
+                              <li><a>Butter Chicken Curry</a></li>
+                              <li><a>Spicy Lamb Curry</a></li>
+                              <li><a>Tandoori Chicken</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright &copy; 2020. Cooking Org. All Rights Reserved. Developed by Rudra Sekhri.</p>
+    </div>
+</body>
+</html>
